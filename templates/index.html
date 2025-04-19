@@ -1,0 +1,216 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Resume Website: Homepage</title>
+
+    <meta property="og:title" content="Resume Website: Homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A resume homepage for software engineering.">
+{% endblock %}
+
+{% block header %}
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <span class="link-label-active">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/about">
+                    <span class="link-label-inactive">About</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/projects">
+                    <span class="link-label-inactive">Projects</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">
+                    <span class="link-label-inactive">Contact</span>
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <button id="dmToggle" class="btn btn-sm ml-2">🌙</button>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="jumbotron-container">
+        <div class="jumbotron">
+            <!-- Yes, this was taken from my Github readme. -->
+
+            <h2 class="font-weight-bold">Hello, World! <a id="easter-egg">👋</a></h2>
+
+            <hr>
+
+            <p>
+                Hi, I'm Ryan, a software engineer specializing in reverse engineering, game development, and cybersecurity.
+                I enjoy building low-level tools, optimizing performance, and pushing the limits of software security.
+                Thanks for visiting my website.
+                Feel free to click on any of the various projects I've worked on.
+            </p>
+
+            <hr>
+
+            <h5 class="font-weight-bold">What I'm currently working on:</h5>
+
+            <ul>
+                <li>
+                    📚
+                    <span class="font-weight-bold">
+                        <a href="https://cs50.harvard.edu/x/2025/">CS50</a>
+                    </span>
+                    and
+                    <span class="font-weight-bold">
+                        <a href="http://cs50.harvard.edu/web">CS50W</a>
+                    </span>
+                </li>
+            </ul>
+
+            <hr>
+
+            <h5 class="font-weight-bold">Previous Projects:</h5>
+
+            <ul>
+                <li>
+                    🌐
+                    <span class="font-weight-bold">
+                        <a href="https://github.com/ryanoutcome20/Atlas">Atlas</a>
+                    </span>
+                    - A networking library that bypasses Source Engine's bandwidth limits, reducing lag and improving server performance.
+                </li>
+
+                <li>
+                    ☕
+                    <span class="font-weight-bold">
+                        <a href="https://github.com/ryanoutcome20/Coffee">Coffee</a>
+                    </span>
+                    - An open-source game modification tool for Garry's Mod.
+                </li>
+
+                <li>
+                    💻
+                    <span class="font-weight-bold">
+                        <a href="https://github.com/ryanoutcome20/pGui">pGui</a>
+                    </span>
+                    - A lightweight and modular Lua-based VGUI framework for dynamic interfaces.
+                </li>
+
+                <li>
+                    🔒
+                    <span class="font-weight-bold">
+                        <a href="https://github.com/ryanoutcome20/Cryptify">Cryptify</a>
+                    </span>
+                    - A C# WinForms encryption tool with AES, RSA, DES, and TripleDES support. Comes with drag-and-drop functionality for secure file handling.
+                </li>
+
+                <li>
+                    🔥
+                    <span class="font-weight-bold">
+                        <a href="https://github.com/ryanoutcome20/Zephyr">Zephyr</a>
+                    </span>
+                    - An open-source game modification tool for Counter-Strike: Global Offensive.
+                </li>
+
+                <li>
+                    ⚖️
+                    <span class="font-weight-bold">
+                        <a href="https://github.com/ryanoutcome20/Benchmark-Toolkit">Benchmark Toolkit</a>
+                    </span>
+                    - A Lua-based benchmarking tool that measures script execution speed and memory usage for optimization.
+                </li>
+            </ul>
+
+            <p>Visit the <a href="projects.html">Projects</a> page to learn more about a specific project.</p>
+
+            <hr>
+
+            <h5 class="font-weight-bold">Skills:</h5>
+
+            <ul>
+                <li>
+                    🛠️
+                    <span class="font-weight-bold gradient-text">
+                        Reverse Engineering
+                    </span>
+                    <em>
+                        (x86/x64 disassembly, memory analysis, and debugging with IDA Pro & Ghidra)
+                    </em>
+                </li>
+
+                <li>
+                    🎮
+                    <span class="font-weight-bold gradient-text">
+                        Game Development & Modding
+                    </span>
+                    <em>
+                        (Game development, Game Engine development, Lua scripting, and SDK development)
+                    </em>
+                </li>
+
+                <li>
+                    🎨
+                    <span class="font-weight-bold gradient-text">
+                        GUI Development
+                    </span>
+                    <em>
+                        (WinForms, WPF, React, and Electron.js for cross-platform UIs)
+                    </em>
+                </li>
+
+                <li>
+                    🛡️
+                    <span class="font-weight-bold gradient-text">
+                        Cybersecurity
+                    </span>
+                    <em>
+                        (exploit development, exploit prevention, anti-cheat development, network security, and encryption)
+                    </em>
+                </li>
+            </ul>
+
+            <hr>
+
+            <h5 class="font-weight-bold">Languages:</h5>
+
+            <p>
+                <img class="img-fluid" alt="C++" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg">
+                <img class="img-fluid" alt="C#" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg">
+                <img class="img-fluid" alt="C" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg">
+                <img class="img-fluid" alt="Javascript" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg">
+                <img class="img-fluid" alt="HTML" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg">
+                <img class="img-fluid" alt="CSS" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg">
+                <img class="img-fluid" alt="Lua" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-plain.svg">
+                <img class="img-fluid" alt="Python" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
+            </p>
+
+            <h5 class="font-weight-bold">Frameworks:</h5>
+
+            <p>
+                <img class="img-fluid" alt="React" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg">
+                <img class="img-fluid" alt="React Bootstrap" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg">
+                <img class="img-fluid" alt="Redux" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg">
+                <img class="img-fluid" alt="AngularJS" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-plain.svg">
+            </p>
+
+            <h5 class="font-weight-bold">Systems:</h5>
+
+            <p>
+                <img class="img-fluid filtered" alt="Powershell" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-plain.svg">
+                <img class="img-fluid filtered" alt="Bash" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-plain.svg">
+                <img class="img-fluid filtered" alt="CMake" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cmake/cmake-plain.svg">
+                <img class="img-fluid" alt="Docker" height=30 width=30 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg">
+            </p>
+
+            <hr class="last-hr">
+        </div>
+    </div>
+{% endblock %}

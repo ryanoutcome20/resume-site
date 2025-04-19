@@ -1,7 +1,3 @@
-// Credits to:
-// https://agezao.github.io/confetti-js/ 
-// https://github.com/Agezao/confetti-js
-
 function ConfettiGenerator(params) {
     //////////////
     // Defaults

@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <title>Resume Website: Contact</title>
+
+    <meta property="og:title" content="Resume Website: Contact">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A resume contact page for software engineering.">
+{% endblock %}
+
+{% block header %}
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item">
+                <a class="nav-link" href="/">
+                    <span class="link-label-inactive">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/about">
+                    <span class="link-label-inactive">About</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/projects">
+                    <span class="link-label-inactive">Projects</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                    <span class="link-label-active">Contact</span>
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <button id="dmToggle" class="btn btn-sm ml-2">🌙</button>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block main %}
+    <div class="jumbotron-container">
+        <div class="jumbotron">
+            <h2 class="font-weight-bold">Contact 📨</h2>
+
+            <hr>
+
+            <p>
+                If you'd like to send me a message and ask me about my code, life, or anything else, 
+                you can contact me directly via Email or GitHub. Please don't contact me to sell me 
+                something, thanks.
+            </p>
+
+            <h4>
+                <img class="img-fluid filtered" alt="" width="25" height="25" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg">
+
+                <a href="https://github.com/ryanoutcome20">Github</a>
+            </h4>
+
+            <h4>
+                <img class="img-fluid filtered" alt="" width="25" height="25" src="https://www.svgrepo.com/show/511917/email-1572.svg">
+
+                <a href="mailto:ryanoutcome@gmail.com">Email</a>
+            </h4>
+
+            <hr class="last-hr">
+        </div>
+    </div>
+{% endblock %}
